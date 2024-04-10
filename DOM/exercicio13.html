@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Somando Números</title>
+        <style>
+            body {
+                font: normal 15pt Arial;
+                text-align: center;
+                background-color:rgb(0, 0, 0) ;
+            }
+            input {
+                font: normal 15pt Arial;
+                width: 100px;
+                width: 340px;
+                padding: 10px;
+            }
+            div#res {
+                margin-top: 20px;
+                color: aliceblue;
+            }
+            h1{
+                color: aliceblue;
+               
+            }
+            span{
+                    color: aliceblue;
+                }
+                
+        </style>
+    </head>
+    <body>
+        <h1>Calculadora</h1>
+
+       <span>N1</span> <br><input type="number" name="txtn1" id="n1">
+       <br>
+       <br>
+       <input type="button" value="Calcular Quadrado" onclick="quadrado()">
+       <br>
+       <input type="button" value="Calcular Cubo" onclick="cubo()">
+       <br>
+       <input type="button" value="Calcular Raiz Quadrada" onclick="raizquadrada()">
+       <br>
+       <span>N2</span> <br><input type="number" name="txtn2" id="n2">
+       <br>
+       <input type="button" value="+" onclick="somar()">
+       <input type="button" value="-" onclick="subtrair()">
+       <br>
+       <input type="button" value="*" onclick="multiplicar()">
+       <input type="button" value="/" onclick="dividir()">
+       <div id="res">=</div>
+
+
+        <script>
+            var n1 
+            var n2
+            
+            function quadrado(){
+                var n1 = Number(window.document.getElementById('n1').value)
+                var s = n1 * n1
+                var res = window.document.getElementById ('res')
+                res.innerHTML = `${n}`
+            }
+
+            
+        
+        </script>
+
+    </body>
+</html>
